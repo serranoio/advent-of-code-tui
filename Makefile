@@ -1,4 +1,3 @@
-# Define the days and parts
 DAYS := $(shell seq 1 25)
 DIRS := $(addprefix day-,$(DAYS))
 
@@ -8,7 +7,7 @@ FILES := $(foreach dir,$(DIRS),$(wildcard $(dir)/part-*.py))
 all: $(FILES)
 
 day-1/part-%:
-	@echo "Day 1: Historian Hysteria (part A)"
+	@echo "Day 1: Historian Hysteria"
 	@chmod +x $@.py
 	@./get-data.py --day 1 | python3 $@.py || true
 
