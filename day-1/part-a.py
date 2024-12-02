@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 
 def main(stdin):
-    print('Processing input data...')
+
     X, Y = [], []
     for row in stdin.split('\n'):
         if row:
