@@ -8,8 +8,11 @@ all: $(FILES)
 
 day-1/part-%:
 	@echo "Day 1: Historian Hysteria"
-	@chmod +x $@.py
 	@./get-data.py --day 1 | python3 $@.py || true
+
+day-2/part-%:
+	@echo "Day 2: Red-Nosed Reports"
+	@./get-data.py --day 2 | python3 $@.py || true
 
 .PHONY: help
 help:
